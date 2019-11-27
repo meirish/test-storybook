@@ -1,0 +1,16 @@
+import hbs from 'htmlbars-inline-precompile';
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+
+
+<Meta title="Alert" />
+
+<Preview>
+  <Story name="solo story">
+   {{
+    template: hbs`<AlertBanner @message="hello" />`,
+    context: {
+      message: "foo"
+    }
+   }}
+  </Story>
+</Preview>
