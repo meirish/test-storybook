@@ -1,10 +1,10 @@
-import { configure, setDocJSON } from '@storybook/ember';
-import json from '../dist/docs/index.json';
+import { configure, setJSONDoc } from '@storybook/ember';
+import json from '../dist/storybook-docgen/index.json';
 
 
-setDocJSON(json);
+setJSONDoc(json);
 
 configure([
   require.context('../stories', true, /.stories.js$/),
-  //require.context('../stories', true, /.stories.mdx$/),
+ require.context('../stories', true, /.stories.mdx$/),
 ], module);

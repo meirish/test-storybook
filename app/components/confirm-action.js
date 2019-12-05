@@ -2,7 +2,9 @@ import Component from '@ember/component';
 import layout from '../templates/components/confirm-action';
 
 /**
- * @module ConfirmAction
+ * @class ConfirmAction
+ * @public
+ *
  * `ConfirmAction` is a button followed by a pop up confirmation message and button used to prevent users from performing actions they do not intend to.
  *
  * @example
@@ -14,10 +16,14 @@ import layout from '../templates/components/confirm-action';
  *  </ConfirmAction>
  * ```
  *
- * @property {Func} [onConfirmAction=null] - The action to take upon confirming.
- * @property {String} [confirmTitle=Delete this?] - The title to display when confirming.
+ * @param {Func} [onConfirmAction=null] - The action to take upon confirming.
+ *
+ * @argument {String} [confirmTitle=Delete this?] - The title to display when confirming.
+ *
  * @property {String} [confirmMessage=You will not be able to recover it later.] - The message to display when confirming.
+ *
  * @property {String} [confirmButtonText=Delete] - The confirm button text.
+ *
  * @property {String} [cancelButtonText=Cancel] - The cancel button text.
  *
  */

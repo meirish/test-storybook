@@ -17,7 +17,7 @@
     "start": "ember serve",
     "test": "ember test",
     "build:storybook": "build-storybook",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006 -s dist"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.0.0",
@@ -33,6 +33,7 @@
     "ember-cli-babel": "^7.11.1",
     "ember-cli-dependency-checker": "^3.1.0",
     "ember-cli-eslint": "^5.1.0",
+    "ember-cli-htmlbars-inline-precompile": "^2.1.0",
     "ember-cli-htmlbars": "^4.0.5",
     "ember-cli-inject-live-reload": "^2.0.1",
     "ember-cli-sri": "^2.1.1",
@@ -45,7 +46,7 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-qunit": "^4.5.1",
     "ember-resolver": "^5.3.0",
-    "ember-source": "^3.13.0",
+    "ember-source": "^3.14.0",
     "ember-welcome-page": "^4.0.0",
     "eslint-plugin-ember": "^7.1.0",
     "eslint-plugin-node": "^10.0.0",
@@ -54,6 +55,9 @@
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "resolutions": {
+    "ember-cli-inject-live-reload": "^2.0.1"
   },
   "dependencies": {
     "@babel/core": "^7.7.4",

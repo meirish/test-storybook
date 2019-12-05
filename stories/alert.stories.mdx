@@ -1,16 +1,22 @@
-import hbs from 'htmlbars-inline-precompile';
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import hbs from 'htmlbars-inline-precompile'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
+# Hello there
 
 <Meta title="Alert" />
 
+The purpose of this `AlertBanner` (yeah it's not `Alert`) component is to do a thing.
+
 <Preview>
-  <Story name="solo story">
-   {{
-    template: hbs`<AlertBanner @message="hello" />`,
-    context: {
-      message: "foo"
-    }
-   }}
+  <Story name="standard">
+{{
+    template: hbs`<AlertBanner @message={{message}} @title={{title}} />`,
+  context: {
+    message: "this is a message",
+    title: "Warning"
+  }
+}}
   </Story>
 </Preview>
+
+<Props of="AlertBanner" />

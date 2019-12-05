@@ -1,4 +1,4 @@
-import hbs from 'htmlbars-inline-precompile';
+import hbs from 'htmlbars-inline-precompile'
 
 export default {
   title: 'Components/AlertBanner',
@@ -6,9 +6,19 @@ export default {
 };
 
 export const standard = () => ({
-    template: hbs`
-    <AlertBanner @message="foo" @title="warning" />
-  `
+  template: hbs`
+    <strong>strong</strong>
+    <AlertBanner @message={{this.message}} @title={{this.title}} />
+  `,
+  context: {
+    actions: {
+      test() {
+        debugger;
+      }
+    },
+    message:"a message",
+    title: "Title"
+  }
 });
 
 
