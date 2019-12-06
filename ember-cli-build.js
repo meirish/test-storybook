@@ -4,9 +4,9 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    //'ember-cli-storybook': {
-      //autoDocEnabled: false
-    //}
+    'ember-cli-storybook': {
+      enableAddonDocsIntegration: true
+    }
     // Add options here
   });
 
