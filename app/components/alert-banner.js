@@ -2,6 +2,7 @@ import Component from '@ember/component';
 import layout from '../templates/components/alert-banner';
 
 /**
+ *
  * `AlertBanner` components are used to inform users of important messages.
  *
  * # a header here
@@ -12,9 +13,6 @@ import layout from '../templates/components/alert-banner';
  * ```
  *
  * @class AlertBanner
- * @public
- * @yield {Hash} bar
- * @yield {Component} bar.baz
  */
 
 
